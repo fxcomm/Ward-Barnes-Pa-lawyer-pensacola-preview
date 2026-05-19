@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ward & Barnes, P.A. | Personal Injury Lawyers | Pensacola, FL</title>
+  <meta name="description" content="Premium cinematic website concept for Ward & Barnes, P.A., personal injury lawyers in Pensacola, Florida. Rated 4.8 from 77 public reviews. Open 24 hours." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --black: #050505;
+      --graphite: #111318;
+      --graphite-2: #181b22;
+      --silver: #e8ebef;
+      --muted: #9da3ad;
+      --blue: #7fb7ff;
+      --gold: #c8a35a;
+      --ivory: #f5f2eb;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--black);
+      color: var(--silver);
+      letter-spacing: -0.02em;
+    }
+    .serif { font-family: 'Libre Baskerville', Georgia, serif; letter-spacing: -0.04em; }
+    .cinematic-bg {
+      background:
+        radial-gradient(circle at 75% 20%, rgba(127,183,255,.24), transparent 30%),
+        radial-gradient(circle at 18% 82%, rgba(200,163,90,.16), transparent 26%),
+        linear-gradient(90deg, rgba(5,5,5,.96), rgba(5,5,5,.82), rgba(5,5,5,.40)),
+        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=90&w=2400');
+      background-size: cover;
+      background-position: center;
+    }
+    .glass {
+      background: rgba(255,255,255,.065);
+      border: 1px solid rgba(255,255,255,.13);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+    }
+    .apple-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 30px 100px rgba(0,0,0,.35);
+    }
+    .soft-card {
+      background: #f5f2eb;
+      color: #090909;
+      box-shadow: 0 40px 90px rgba(0,0,0,.18);
+    }
+    .hairline { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent); }
+    .blue-gradient { background: linear-gradient(135deg, #dcecff, #7fb7ff 50%, #4974ac); }
+    .gold-gradient { background: linear-gradient(135deg, #f2d589, #c8a35a 52%, #775320); }
+    .text-blue { color: var(--blue); }
+    .text-gold { color: var(--gold); }
+    .noise:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .035;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+    }
+    .review-track { mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); }
+    .rating-bar { height: 8px; border-radius: 999px; background: rgba(255,255,255,.1); overflow: hidden; }
+    .rating-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #c8a35a, #f2d589); }
+    .hover-lift { transition: transform .25s ease, background .25s ease, border-color .25s ease; }
+    .hover-lift:hover { transform: translateY(-6px); background: rgba(255,255,255,.095); border-color: rgba(127,183,255,.4); }
+  </style>
+</head>
+<body class="noise">
+
+  <!-- Top System Bar -->
+  <div class="bg-black border-b border-white/10 text-xs text-zinc-400">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex flex-col md:flex-row justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+        <span>Open 24 hours · On-site services · Online appointments</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="tel:+18509128060" class="hover:text-white transition"><i class="fa-solid fa-phone text-blue mr-2"></i>+1 850-912-8060</a>
+        <span class="hidden sm:inline text-white/20">|</span>
+        <span>1700 W Main St #100, Pensacola, FL</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-black/72 backdrop-blur-2xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between gap-6">
+      <a href="#" class="flex items-center gap-4 min-w-0">
+        <div class="w-11 h-11 rounded-2xl bg-white text-black flex items-center justify-center font-black tracking-tighter">W&B</div>
+        <div class="min-w-0">
+          <div class="text-xl md:text-2xl font-black tracking-tight truncate">Ward & Barnes, P.A.</div>
+          <div class="text-[10px] uppercase tracking-[.32em] text-zinc-500 mt-1">Personal Injury Lawyers</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-sm text-zinc-400">
+        <a href="#authority" class="hover:text-white transition">Authority</a>
+        <a href="#cases" class="hover:text-white transition">Injury Claims</a>
+        <a href="#reviews" class="hover:text-white transition">Reviews</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+      <a href="tel:+18509128060" class="bg-white text-black px-5 py-3 rounded-full text-sm font-black hover:bg-[#dcecff] transition whitespace-nowrap">Free Case Call</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="cinematic-bg min-h-[92vh] flex items-center">
+    <div class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-[1.12fr_.88fr] gap-14 items-center">
+      <section>
+        <div class="inline-flex items-center gap-3 glass rounded-full px-5 py-2 text-sm text-zinc-300 mb-8">
+          <i class="fa-solid fa-star text-gold"></i>
+          4.8 rating from 77 public reviews
+        </div>
+        <h1 class="text-6xl md:text-8xl lg:text-[7.5rem] font-black leading-[.86] tracking-[-.075em] mb-8">
+          When the claim matters, choose authority.
+        </h1>
+        <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl leading-relaxed mb-10 tracking-[-.03em]">
+          Ward & Barnes, P.A. is a Pensacola personal injury law firm built around direct attorney attention, disciplined communication, and serious advocacy after an accident.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:+18509128060" class="blue-gradient text-black px-8 py-4 rounded-full font-black text-center shadow-2xl hover:scale-[1.02] transition">
+            <i class="fa-solid fa-phone mr-2"></i> Call +1 850-912-8060
+          </a>
+          <a href="#reviews" class="border border-white/20 px-8 py-4 rounded-full font-bold text-center hover:bg-white hover:text-black transition">Read Client Proof</a>
+        </div>
+      </section>
+
+      <aside class="apple-card rounded-[2rem] p-8 md:p-10">
+        <div class="flex items-start justify-between gap-6 mb-8">
+          <div>
+            <p class="text-blue uppercase tracking-[.28em] text-xs font-black mb-3">Public Reputation</p>
+            <h2 class="text-5xl font-black tracking-[-.07em]">4.8</h2>
+            <div class="flex gap-1 text-gold mt-4 text-lg">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="text-right text-sm text-zinc-400">
+            <div class="text-white font-black text-3xl tracking-[-.05em]">77</div>
+            reviews listed
+          </div>
+        </div>
+        <div class="hairline mb-8"></div>
+        <div class="space-y-5 text-sm">
+          <div class="flex items-start gap-4">
+            <i class="fa-solid fa-location-dot text-blue mt-1"></i>
+            <div><strong class="block text-white">Pensacola Office</strong><span class="text-zinc-400">1700 W Main St #100, Pensacola, FL 32502</span></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fa-solid fa-clock text-blue mt-1"></i>
+            <div><strong class="block text-white">Availability</strong><span class="text-zinc-400">Open 24 hours according to supplied listing data</span></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fa-solid fa-wheelchair text-blue mt-1"></i>
+            <div><strong class="block text-white">Accessibility</strong><span class="text-zinc-400">Wheelchair-accessible entrance and toilet listed</span></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fa-solid fa-laptop text-blue mt-1"></i>
+            <div><strong class="block text-white">Service Options</strong><span class="text-zinc-400">On-site services and online appointments listed</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <!-- Authority Band -->
+  <section id="authority" class="bg-[#f5f2eb] text-black py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-14 items-end mb-16">
+        <div>
+          <p class="uppercase tracking-[.35em] text-xs font-black text-zinc-500 mb-5">Commercial Objective: Authority</p>
+          <h2 class="text-5xl md:text-7xl font-black leading-[.9] tracking-[-.07em]">The burden moves from you to the firm.</h2>
+        </div>
+        <p class="text-xl text-zinc-600 leading-relaxed max-w-2xl">
+          The positioning is simple: after a crash, injury, insurance dispute, or negligent act, clients want clarity, communication, and leverage. This site frames Ward & Barnes as the institutional choice without losing personal service.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-white rounded-[2rem] p-8 border border-black/5 shadow-xl">
+          <div class="text-6xl font-black tracking-[-.08em] mb-5">01</div>
+          <h3 class="text-2xl font-black tracking-[-.05em] mb-3">Direct Attention</h3>
+          <p class="text-zinc-600 leading-relaxed">Reviews repeatedly describe communication, being kept informed, and direct work with named attorneys.</p>
+        </article>
+        <article class="bg-white rounded-[2rem] p-8 border border-black/5 shadow-xl">
+          <div class="text-6xl font-black tracking-[-.08em] mb-5">02</div>
+          <h3 class="text-2xl font-black tracking-[-.05em] mb-3">Injury Focus</h3>
+          <p class="text-zinc-600 leading-relaxed">Listing category identifies the firm as a personal injury lawyer, with multiple reviews referencing car accidents and injury claims.</p>
+        </article>
+        <article class="bg-white rounded-[2rem] p-8 border border-black/5 shadow-xl">
+          <div class="text-6xl font-black tracking-[-.08em] mb-5">03</div>
+          <h3 class="text-2xl font-black tracking-[-.05em] mb-3">Social Proof</h3>
+          <p class="text-zinc-600 leading-relaxed">A 4.8 rating from 77 public reviews creates a strong reputation signal for conversion-led search traffic.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice / Claims -->
+  <section id="cases" class="py-28 px-6 bg-black">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-4xl mb-16">
+        <p class="text-blue uppercase tracking-[.35em] text-xs font-black mb-5">Injury Claim Pathways</p>
+        <h2 class="text-5xl md:text-7xl font-black leading-[.92] tracking-[-.07em] mb-6">Built for accident victims facing insurers, delay, and uncertainty.</h2>
+        <p class="text-zinc-400 text-xl leading-relaxed">These service blocks are grounded in the provided category and review text, which repeatedly mentions personal injury, auto accidents, medical treatment, claims, settlements, and communication.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <article class="glass hover-lift rounded-[2rem] p-8">
+          <i class="fa-solid fa-car-burst text-blue text-3xl mb-7"></i>
+          <h3 class="text-2xl font-black tracking-[-.05em] mb-4">Car Accidents</h3>
+          <p class="text-zinc-400 leading-relaxed">Representation after collisions, insurance disputes, injury treatment, and claim negotiation.</p>
+        </article>
+        <article class="glass hover-lift rounded-[2rem] p-8">
+          <i class="fa-solid fa-user-injured text-blue text-3xl mb-7"></i>
+          <h3 class="text-2xl font-black tracking-[-.05em] mb-4">Personal Injury</h3>
+          <p class="text-zinc-400 leading-relaxed">Legal help for people injured through negligence, unsafe conditions, or preventable harm.</p>
+        </article>
+        <article class="glass hover-lift rounded-[2rem] p-8">
+          <i class="fa-solid fa-building-shield text-blue text-3xl mb-7"></i>
+          <h3 class="text-2xl font-black tracking-[-.05em] mb-4">Premises Injuries</h3>
+          <p class="text-zinc-400 leading-relaxed">Claims involving injuries at businesses or local premises, referenced in public review material.</p>
+        </article>
+        <article class="glass hover-lift rounded-[2rem] p-8">
+          <i class="fa-solid fa-scale-balanced text-blue text-3xl mb-7"></i>
+          <h3 class="text-2xl font-black tracking-[-.05em] mb-4">Claim Strategy</h3>
+          <p class="text-zinc-400 leading-relaxed">Structured advice on options, expectations, documentation, communication, and next steps.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinematic Quote Section -->
+  <section class="relative py-36 px-6 overflow-hidden">
+    <div class="absolute inset-0 opacity-55" style="background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=90&w=2200'); background-size: cover; background-position: center;"></div>
+    <div class="relative max-w-6xl mx-auto text-center">
+      <p class="text-blue uppercase tracking-[.35em] text-xs font-black mb-8">Client-language positioning</p>
+      <blockquote class="text-4xl md:text-7xl font-black leading-[.98] tracking-[-.07em]">
+        “They kept me informed, handled the details, and took the burden off my shoulders.”
+      </blockquote>
+      <p class="text-zinc-400 mt-8 text-lg">Composite positioning based on repeated public review themes, not a single exact quotation.</p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-28 px-6 bg-[#0d0f14]">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-14 items-start mb-16">
+        <div class="sticky top-28">
+          <p class="text-gold uppercase tracking-[.35em] text-xs font-black mb-5">Client Proof</p>
+          <h2 class="text-5xl md:text-7xl font-black leading-[.9] tracking-[-.07em] mb-8">77 reviews. 4.8 average. Repeated trust signals.</h2>
+          <p class="text-zinc-400 text-lg leading-relaxed mb-8">The supplied review data repeatedly highlights communication, responsiveness, compassion, professionalism, direct attorney attention, and favorable case handling.</p>
+          <div class="apple-card rounded-[2rem] p-7">
+            <div class="flex items-end gap-4 mb-5">
+              <span class="text-7xl font-black tracking-[-.08em] text-white">4.8</span>
+              <span class="pb-3 text-zinc-400">/ 5</span>
+            </div>
+            <div class="flex gap-1 text-gold text-xl mb-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <p class="text-sm text-zinc-500">Based on 77 public reviews in supplied listing data. Reviews are not independently verified here.</p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-5">
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">2 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“YOU WILL NOT FIND BETTER IN THIS TOWN!! These guys are not only great at what they do...”</p>
+            <strong class="text-white">Redricus Miles</strong>
+          </article>
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">2 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“Ward & Barnes, P.A. and their team were exceptional. They kept me well informed...”</p>
+            <strong class="text-white">Amanda Spillers</strong>
+          </article>
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">4 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“Scott was straight forward, kept me informed on the progress of the case and told me what to expect...”</p>
+            <strong class="text-white">Patricia Keeler</strong>
+          </article>
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">3 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“He handled everything wonderfully, he was extremely communicative and made sure he was taken care of...”</p>
+            <strong class="text-white">Megan Barton</strong>
+          </article>
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">6 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“BEST THING THAT EVER HAPPENED! Mr. Ward took...”</p>
+            <strong class="text-white">Connor Walther</strong>
+          </article>
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">5 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“They have been responsive and professional... direct attention from top notch attorneys...”</p>
+            <strong class="text-white">Tyler Kercher</strong>
+          </article>
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">6 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“Responsive, ethical, and very effective... able to settle for an increased amount than initially expected.”</p>
+            <strong class="text-white">Anthony Wilkerson</strong>
+          </article>
+          <article class="apple-card rounded-[2rem] p-7">
+            <div class="flex justify-between gap-4 mb-5"><div class="text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span class="text-xs text-zinc-500">6 years ago</span></div>
+            <p class="text-zinc-300 leading-relaxed mb-6">“Attorneys Austin Ward and Scott Barnes treat their clients with dignity and respect.”</p>
+            <strong class="text-white">Matt Ray</strong>
+          </article>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-4 gap-5">
+        <div class="glass rounded-[2rem] p-7">
+          <h3 class="text-2xl font-black mb-4 tracking-[-.05em]">Communication</h3>
+          <p class="text-zinc-400 leading-relaxed">Reviews repeatedly mention being informed, responsive staff, and clear expectations.</p>
+        </div>
+        <div class="glass rounded-[2rem] p-7">
+          <h3 class="text-2xl font-black mb-4 tracking-[-.05em]">Attorney Access</h3>
+          <p class="text-zinc-400 leading-relaxed">Multiple clients reference direct work with Scott Barnes, Austin Ward, and Geoffrey Pittman.</p>
+        </div>
+        <div class="glass rounded-[2rem] p-7">
+          <h3 class="text-2xl font-black mb-4 tracking-[-.05em]">Injury Experience</h3>
+          <p class="text-zinc-400 leading-relaxed">Car accident and injury claim references appear throughout the review material.</p>
+        </div>
+        <div class="glass rounded-[2rem] p-7">
+          <h3 class="text-2xl font-black mb-4 tracking-[-.05em]">Professional Care</h3>
+          <p class="text-zinc-400 leading-relaxed">Common review language includes professional, caring, compassionate, and respectful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="py-28 px-6 bg-[#f5f2eb] text-black">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-4xl mb-16">
+        <p class="uppercase tracking-[.35em] text-xs font-black text-zinc-500 mb-5">The Client Journey</p>
+        <h2 class="text-5xl md:text-7xl font-black leading-[.92] tracking-[-.07em]">A serious process, made intelligible.</h2>
+      </div>
+      <div class="grid md:grid-cols-4 gap-5">
+        <div class="bg-white rounded-[2rem] p-7 shadow-xl border border-black/5">
+          <span class="text-zinc-400 font-black">01</span>
+          <h3 class="text-2xl font-black mt-6 mb-3 tracking-[-.05em]">Call</h3>
+          <p class="text-zinc-600 leading-relaxed">Tell the firm what happened, where it happened, and what injuries or insurance issues exist.</p>
+        </div>
+        <div class="bg-white rounded-[2rem] p-7 shadow-xl border border-black/5">
+          <span class="text-zinc-400 font-black">02</span>
+          <h3 class="text-2xl font-black mt-6 mb-3 tracking-[-.05em]">Review</h3>
+          <p class="text-zinc-600 leading-relaxed">The facts, documents, medical treatment, policy issues, and claim posture are assessed.</p>
+        </div>
+        <div class="bg-white rounded-[2rem] p-7 shadow-xl border border-black/5">
+          <span class="text-zinc-400 font-black">03</span>
+          <h3 class="text-2xl font-black mt-6 mb-3 tracking-[-.05em]">Strategy</h3>
+          <p class="text-zinc-600 leading-relaxed">Clients are told what to expect, what options exist, and what the claim path may require.</p>
+        </div>
+        <div class="bg-white rounded-[2rem] p-7 shadow-xl border border-black/5">
+          <span class="text-zinc-400 font-black">04</span>
+          <h3 class="text-2xl font-black mt-6 mb-3 tracking-[-.05em]">Action</h3>
+          <p class="text-zinc-600 leading-relaxed">The firm handles the claim burden while keeping the client informed through the process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-28 px-6 bg-black">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-[.88fr_1.12fr] gap-10 items-stretch">
+      <div class="apple-card rounded-[2rem] p-8 md:p-10">
+        <p class="text-blue uppercase tracking-[.35em] text-xs font-black mb-5">Contact Ward & Barnes</p>
+        <h2 class="text-5xl md:text-6xl font-black leading-[.92] tracking-[-.07em] mb-8">Available 24 hours. Start with a call.</h2>
+        <p class="text-zinc-400 text-lg leading-relaxed mb-8">If you were injured in an accident, call to discuss the incident, treatment, documentation, insurance status, and whether the firm can assist.</p>
+        <div class="space-y-5">
+          <a href="tel:+18509128060" class="flex items-center gap-4 bg-white text-black rounded-2xl p-5 font-black hover:bg-[#dcecff] transition">
+            <i class="fa-solid fa-phone text-2xl"></i>
+            <span>+1 850-912-8060</span>
+          </a>
+          <div class="flex items-start gap-4 rounded-2xl p-5 border border-white/10 bg-white/5">
+            <i class="fa-solid fa-location-dot text-blue text-2xl mt-1"></i>
+            <div>
+              <strong class="block text-white">Office</strong>
+              <span class="text-zinc-400">1700 W Main St #100<br>Pensacola, FL 32502<br>United States</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 rounded-2xl p-5 border border-white/10 bg-white/5">
+            <i class="fa-solid fa-universal-access text-blue text-2xl mt-1"></i>
+            <div>
+              <strong class="block text-white">Accessibility & Services</strong>
+              <span class="text-zinc-400">Wheelchair-accessible entrance and toilet, on-site services, online appointments, toilet amenity listed.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="soft-card rounded-[2rem] p-8 md:p-10">
+        <h3 class="text-4xl md:text-5xl font-black tracking-[-.07em] mb-4">Request a case review</h3>
+        <p class="text-zinc-600 mb-8 leading-relaxed">Demo form. Connect to a secure form provider before publishing. Do not submit confidential information through an unconfigured form.</p>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="text-sm font-black">Full Name</label>
+            <input type="text" placeholder="Your name" class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-4 focus:outline-none focus:ring-2 focus:ring-[#7fb7ff]">
+          </div>
+          <div>
+            <label class="text-sm font-black">Phone</label>
+            <input type="tel" placeholder="Your phone number" class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-4 focus:outline-none focus:ring-2 focus:ring-[#7fb7ff]">
+          </div>
+          <div>
+            <label class="text-sm font-black">Incident Type</label>
+            <select class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-4 focus:outline-none focus:ring-2 focus:ring-[#7fb7ff] bg-white">
+              <option>Car accident</option>
+              <option>Personal injury</option>
+              <option>Business/premises injury</option>
+              <option>Insurance claim issue</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-black">Preferred Contact</label>
+            <select class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-4 focus:outline-none focus:ring-2 focus:ring-[#7fb7ff] bg-white">
+              <option>Phone call</option>
+              <option>Online appointment</option>
+              <option>In-office appointment</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label class="text-sm font-black">Brief Summary</label>
+            <textarea rows="5" placeholder="Briefly describe what happened. Avoid highly sensitive details in this demo form." class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-4 focus:outline-none focus:ring-2 focus:ring-[#7fb7ff]"></textarea>
+          </div>
+        </div>
+        <button type="button" class="mt-6 w-full bg-black text-white py-5 rounded-2xl font-black hover:bg-[#1b1b1b] transition">Submit Case Inquiry</button>
+        <p class="text-xs text-zinc-500 mt-5 leading-relaxed">Attorney advertising. No attorney-client relationship is created by viewing this page or submitting a demo inquiry. Past results and reviews do not guarantee future outcomes.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-white/10 px-6 py-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8 text-sm text-zinc-500">
+      <div>
+        <div class="text-white text-2xl font-black tracking-[-.05em] mb-2">Ward & Barnes, P.A.</div>
+        <p>Personal Injury Lawyer · 1700 W Main St #100, Pensacola, FL 32502</p>
+        <p class="mt-2">Open 24 hours · +1 850-912-8060</p>
+      </div>
+      <div class="max-w-2xl md:text-right leading-relaxed">
+        <p>Website concept based on user-supplied business listing and review excerpts. Business details, attorney credentials, results, and compliance language should be verified before publication.</p>
+        <p class="mt-2">© 2026 Ward & Barnes, P.A. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
